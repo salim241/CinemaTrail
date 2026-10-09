@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0B0F19;
+  --bg-secondary: #121826;
+  --bg-card: #171E2E;
+
+  --accent: #E50914;
+  --accent-hover: #F6121D;
+
+  --text-primary: #F5F5F5;
+  --text-secondary: #A7ACB8;
+
+  --border: #252D3D;
+
+  --rating: #F5C518;
+}
+
+body{
+  background-color: var(--bg-primary);
+}
+
+.links-style{
+    @apply text-[var(--text-primary)];
+}
