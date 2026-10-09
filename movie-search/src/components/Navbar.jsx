@@ -18,7 +18,7 @@ export default function Navbar() {
                 
                 ">
 
-                    Movie <span className="text-red-500">Search</span>
+                    Cinema <span className="text-red-500">Trail</span>
                 </h3>
 
                 <div className="w-3/10">
