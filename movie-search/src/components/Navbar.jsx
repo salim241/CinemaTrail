@@ -23,11 +23,11 @@ export default function Navbar() {
 
                 <div className="w-3/10">
                     <ul className="flex justify-between">
-                        <li className="links-style"><a href="/">Home</a></li>
-                        <li className="links-style"><a href="/">Movie</a></li>
-                        <li className="links-style"><a href="/">TV Shows</a></li>
-                        <li className="links-style"><a href="/">Popular</a></li>
-                        <li className="links-style"><a href="/">Top Rated</a></li>
+                        <li className="links-style"><a href="/" className="hover-links">Home</a></li>
+                        <li className="links-style"><a href="/" className="hover-links">Movie</a></li>
+                        <li className="links-style"><a href="/" className="hover-links">TV Shows</a></li>
+                        <li className="links-style"><a href="/" className="hover-links">Popular</a></li>
+                        <li className="links-style"><a href="/" className="hover-links">Top Rated</a></li>
                     </ul>
                 </div>
 
