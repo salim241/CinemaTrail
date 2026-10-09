@@ -23,3 +23,7 @@ body{
 .links-style{
     @apply text-[var(--text-primary)];
 }
+
+.hover-links{
+  @apply hover:text-[var(--accent-hover)]
+}
