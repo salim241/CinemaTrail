@@ -1,6 +1,27 @@
 import Poster from "../assets/poster1.png";
 
 export default function PosterSlider() {
+
+    const movies = [
+        {
+            title: "John Wick: Chapter 4",
+            movieDetail: { year: "2023", type: "Action / Drama", duration: "2h 49m", rating: "7.8" },
+            description: `John Wick uncovers a path to defeating the High Table. But before
+                           he can earn his freedom, Wick must face a new enemy with powerful
+                           alliances across the globe.`,
+        },
+
+        {
+            title: "Drishyam: The Conclusion",
+            movieDetail: { year: "2026", type: "Crime / Mystery / Thriller", duration: "2h 30m", rating: "8.9" },
+            description: `Years after covering up a murder, Vijay Salgaonkar
+                          and his family face new threats that could expose
+                          their darkest secrets. As the investigation intensifies,
+                          Vijay must use his intelligence and carefully planned
+                          strategies to protect his family once again.`
+        }
+    ]
+
     return (
         <section className="relative isolate h-84 w-full overflow-hidden bg-[var(--bg-primary)] text-[var(--text-primary)]">
 
@@ -34,7 +55,7 @@ export default function PosterSlider() {
 
 
                     <h1 className="mb-2 text-3xl font-bold leading-tight tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
-                        John Wick: Chapter 4
+                        {movies[0].title}
                     </h1>
 
 
@@ -42,19 +63,19 @@ export default function PosterSlider() {
 
                     <div className="mb-3 flex flex-wrap items-center gap-3 text-sm text-[var(--text-secondary)] sm:text-base">
 
-                        <span>2023</span>
+                        <span>{movies[0].movieDetail.year}</span>
 
                         <span className="text-white/30">|</span>
 
-                        <span>Action / Thriller</span>
+                        <span>{movies[0].movieDetail.type}</span>
 
                         <span className="text-white/30">|</span>
 
-                        <span>2h 49m</span>
+                        <span>{movies[0].movieDetail.duration}</span>
 
                         <span className="flex items-center gap-1">
                             <span className="text-[var(--rating)]">★</span>
-                            <span className="text-[var(--text-primary)]">7.8/10</span>
+                            <span className="text-[var(--text-primary)]">{movies[0].movieDetail.rating}/10</span>
                         </span>
 
                     </div>
@@ -63,9 +84,7 @@ export default function PosterSlider() {
 
 
                     <p className="mb-4 max-w-xl text-sm leading-6 text-[var(--text-secondary)] sm:text-base sm:leading-7">
-                        John Wick uncovers a path to defeating the High Table. But before
-                        he can earn his freedom, Wick must face a new enemy with powerful
-                        alliances across the globe.
+                        {movies[0].description}
                     </p>
 
 
