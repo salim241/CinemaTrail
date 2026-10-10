@@ -7,10 +7,10 @@ export default function Navbar() {
     return (
         <div>
             <div className="
-            h-14 w-full 
+            h-16 w-full 
             max-md:w-full 
             flex justify-around items-center
-            
+            border-b border-[var(--border)]
             ">
 
                 <div className="flex gap-2">
