@@ -11,14 +11,14 @@ export default function MovieCard() {
 
             <div className="h-70 flex gap-5">
                 <div className="h-full">
-                    <div className="h-full w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-2xl">
+                    <div className="h-auto w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-2xl">
 
                         <div className="h-[65%] rounded-t-lg">
                             <img src={Image} alt="oppenheimer" className="rounded-t-lg" />
                         </div>
 
 
-                        <div className="h-[35%] pt-4 pb-4 pl-3">
+                        <div className="h-[35%] pt-2 pb-2 pl-3">
                             <h3 className="mb-1 text-[var(--text-primary)] font-medium">Oppenheimer</h3>
                             <span className="font-sm text-[var(--text-secondary)]">2023 | Drama</span>
                             <p className="mt-1 text-[var(--rating)]"> <span className=" mr-1text-[var(--rating)]">★</span> 8.3</p>
@@ -27,14 +27,14 @@ export default function MovieCard() {
                 </div>
 
                 <div className="h-full">
-                    <div className="h-full w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-2xl">
+                    <div className="h-auto w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-2xl">
 
                         <div className="h-[65%] rounded-t-lg">
                             <img src={Image} alt="oppenheimer" className="rounded-t-lg" />
                         </div>
 
 
-                        <div className="h-[35%] pt-4 pb-4 pl-3">
+                        <div className="h-[35%] pt-2 pb-2 pl-3">
                             <h3 className="mb-1 text-[var(--text-primary)] font-medium">Oppenheimer</h3>
                             <span className="font-sm text-[var(--text-secondary)]">2023 | Drama</span>
                             <p className="mt-1 text-[var(--rating)]"><span className="mr-1 text-[var(--rating)]">★</span>8.3</p>
@@ -43,13 +43,13 @@ export default function MovieCard() {
                 </div>
 
                 <div className="h-full">
-                    <div className="h-full w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-2xl">
+                    <div className="h-auto w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-2xl">
 
                         <div className="h-[65%] rounded-t-lg">
                             <img src={Image} alt="oppenheimer" className="rounded-t-lg" />
                         </div>
 
-                        <div className="h-[35%] pt-4 pb-4 pl-3">
+                        <div className="h-[35%] pt-2 pb-2 pl-3">
                             <h3 className="mb-1 text-[var(--text-primary)] font-medium">Oppenheimer</h3>
                             <span className="font-sm text-[var(--text-secondary)]">2023 | Drama</span>
                             <p className="mt-1 text-[var(--rating)]"><span className="mr-1 text-[var(--rating)]">★</span>8.3</p>
@@ -59,9 +59,6 @@ export default function MovieCard() {
 
 
             </div>
-
-
-            <h2>aslkdjfh</h2>
         </div>
     )
 }
