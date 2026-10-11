@@ -3,58 +3,65 @@ import Image from "../assets/oppenheimer.jpg"
 export default function MovieCard() {
 
     return (
-        <div className="px-14">
-            <h2 className="text-[var(--text-primary)]">Popular Movies</h2>
-            <div className="flex gap-6">
-                <div>
-                    <div className="w-52 bg-[var(--bg-card)]">
+        <div className="h-64 px-14">
 
-                        <div className="h-1/2">
-                            <img src={Image} alt="oppenheimer" />
-                        </div>
-
-
-                        <div className="text-white">
-                            <h3>Oppenheimer</h3>
-                            <span>2023 | Drama</span>
-                            <p><span className="text-[var(--rating)]">★</span>8.3</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div className="w-52 bg-[var(--bg-card)]">
-
-                        <div className="h-1/2">
-                            <img src={Image} alt="oppenheimer" />
-                        </div>
-
-
-                        <div className="text-white">
-                            <h3>Oppenheimer</h3>
-                            <span>2023 | Drama</span>
-                            <p><span className="text-[var(--rating)]">★</span>8.3</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div>
-                    <div className="w-52 bg-[var(--bg-card)]">
-
-                        <div className="h-1/2">
-                            <img src={Image} alt="oppenheimer" />
-                        </div>
-
-
-                        <div className="text-white">
-                            <h3>Oppenheimer</h3>
-                            <span>2023 | Drama</span>
-                            <p><span className="text-[var(--rating)]">★</span>8.3</p>
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <h2 className="font-semibold text-2xl mb-3 text-[var(--text-primary)]">Popular Movies</h2>
             </div>
+
+            <div className="h-70 flex gap-5">
+                <div className="h-full">
+                    <div className="h-full w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-2xl">
+
+                        <div className="h-[65%] rounded-t-lg">
+                            <img src={Image} alt="oppenheimer" className="rounded-t-lg" />
+                        </div>
+
+
+                        <div className="h-[35%] pt-4 pb-4 pl-3">
+                            <h3 className="mb-1 text-[var(--text-primary)] font-medium">Oppenheimer</h3>
+                            <span className="font-sm text-[var(--text-secondary)]">2023 | Drama</span>
+                            <p className="mt-1 text-[var(--rating)]"> <span className=" mr-1text-[var(--rating)]">★</span> 8.3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="h-full">
+                    <div className="h-full w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-2xl">
+
+                        <div className="h-[65%] rounded-t-lg">
+                            <img src={Image} alt="oppenheimer" className="rounded-t-lg" />
+                        </div>
+
+
+                        <div className="h-[35%] pt-4 pb-4 pl-3">
+                            <h3 className="mb-1 text-[var(--text-primary)] font-medium">Oppenheimer</h3>
+                            <span className="font-sm text-[var(--text-secondary)]">2023 | Drama</span>
+                            <p className="mt-1 text-[var(--rating)]"><span className="mr-1 text-[var(--rating)]">★</span>8.3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="h-full">
+                    <div className="h-full w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-2xl">
+
+                        <div className="h-[65%] rounded-t-lg">
+                            <img src={Image} alt="oppenheimer" className="rounded-t-lg" />
+                        </div>
+
+                        <div className="h-[35%] pt-4 pb-4 pl-3">
+                            <h3 className="mb-1 text-[var(--text-primary)] font-medium">Oppenheimer</h3>
+                            <span className="font-sm text-[var(--text-secondary)]">2023 | Drama</span>
+                            <p className="mt-1 text-[var(--rating)]"><span className="mr-1 text-[var(--rating)]">★</span>8.3</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <h2>aslkdjfh</h2>
         </div>
     )
 }

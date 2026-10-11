@@ -23,7 +23,7 @@ export default function PosterSlider() {
     ]
 
     return (
-        <section className="mb-10 relative isolate h-84 w-full overflow-hidden bg-[var(--bg-primary)] text-[var(--text-primary)]">
+        <section className="mb-8 relative isolate h-84 w-full overflow-hidden bg-[var(--bg-primary)] text-[var(--text-primary)]">
 
 
             <div
