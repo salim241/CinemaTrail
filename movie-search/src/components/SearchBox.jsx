@@ -6,11 +6,8 @@ export default function SearchBox() {
 
     let handleInputChange = (event)=>{
         setInput(event.target.value);
-    }
-
-    let printinput = (event)=>{
-        console.log("Input clicked");
-        console.log(event.innerText)
+        console.log(event.target.value);
+        
     }
 
     return (

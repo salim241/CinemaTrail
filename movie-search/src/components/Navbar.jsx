@@ -1,5 +1,4 @@
-import SearchBox from "./SearchBox.jsx"
-import Button from "./Button.jsx"
+import SearchArea from "./SearchArea.jsx"
 
 import Logo from "../assets/logo.png"
 
@@ -40,8 +39,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="w-3/10 h-7/10 flex justify-around">
-                    <SearchBox />
-                    <Button />
+                    <SearchArea />
                 </div>
 
             </div>
