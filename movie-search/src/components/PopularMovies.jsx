@@ -1,9 +1,17 @@
 import MovieCard from "./MovieCard.jsx";
 
-export default function PopularMovies(){
+export default function PopularMovies({ movieArr }) {
+
+    let oddIndexMovies = movieArr.filter((moive, index) => {
+        return index % 2 != 0;
+    });
+
     return (
-        <div>
-            <MovieCard />
+        <div className="px-14">
+
+            <h2 className="font-semibold text-2xl mb-3 text-[var(--text-primary)]">Popular Movies</h2>
+
+            <MovieCard oddIndexMovies = {oddIndexMovies}/>
         </div>
     )
 }

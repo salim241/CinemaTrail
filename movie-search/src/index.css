@@ -20,6 +20,10 @@ body{
   background-color: var(--bg-primary);
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+
 .links-style{
     @apply text-[var(--text-primary)];
 }
