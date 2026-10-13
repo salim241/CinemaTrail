@@ -1,17 +1,17 @@
 import MovieCard from "./MovieCard.jsx";
 
-export default function TopRatedMovies({oddMovieArr}) {
+export default function TopRatedMovies({topRatedMovies}) {
 
-    // let evenIndexMovies = movieArr.filter( (moive, index) =>{
-    //     return index % 2 === 0;
-    // });
+    let evenIndexMovies = topRatedMovies.filter( (movie, index) =>{
+        return (index % 2 === 0);
+    });
 
     return (
         <div className="px-14">
 
             <h2 className="font-semibold text-2xl mb-3 text-[var(--text-primary)]">Top Rated Movies</h2>
 
-            <MovieCard oddMovieArr = {oddMovieArr}/>
+            <MovieCard movies = {evenIndexMovies}/>
         </div>
     )
 }
