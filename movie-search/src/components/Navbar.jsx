@@ -12,7 +12,7 @@ export default function Navbar() {
             border-b border-[var(--border)]
             ">
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 cursor-pointer">
 
                     <img src={Logo} alt="Logo" className="h-fulll w-8" />
 
