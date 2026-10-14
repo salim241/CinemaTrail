@@ -1,5 +1,6 @@
 import PopularMovies from "./PopularMovies.jsx";
 import TopRatedMovies from "./TopRatedMovies.jsx";
+import dune2 from "../assets/dune_part2.jpg";
 
 export default function MovieSection() {
 
