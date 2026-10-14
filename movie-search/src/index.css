@@ -28,6 +28,14 @@ body{
     @apply text-[var(--text-primary)];
 }
 
+.footer-links{
+  @apply text-[var(--text-primary)] mb-1;
+}
+
+.footer-texts{
+  @apply text-[var(--text-primary)] font-bold text-2xl mb-8;
+}
+
 .hover-links{
   @apply hover:text-[var(--accent-hover)]
 }
