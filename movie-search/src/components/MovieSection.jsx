@@ -20,155 +20,62 @@ import titanic from "../assets/titanic.jpg";
 import gladiator from "../assets/gladiator.jpg";
 import the_wolf_of_wall_street from "../assets/the_wolf_of_wall_street.jpg";
 import oppenheimer from "../assets/oppenheimer.jpg";
+import { useEffect, useState } from "react";
+
+
+import axios from "axios"
 
 export default function MovieSection() {
 
-    let movieArr = [
-        {
-            name: "Oppenheimer",
-            othDet: "2023 | Drama",
-            rating: "8.3",
-            image: oppenheimer
-        },
+    let [popularMovies, setPopularMovies] = useState([])
+    let [topRatedMovies, setTopRatedMovies] = useState([])
 
-        {
-            name: "Inception",
-            othDet: "2010 | Sci-Fi",
-            rating: "8.8",
-            image: inception
-        },
+    useEffect(() => {
 
-        {
-            name: "Interstellar",
-            othDet: "2014 | Sci-Fi",
-            rating: "8.7",
-            image: interstellar
-        },
+        const accessToken = import.meta.env.VITE_TMDB_READ_ACCESS_TOKEN;
+        const url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
 
-        {
-            name: "The Dark Knight",
-            othDet: "2008 | Action",
-            rating: "9.0",
-            image: the_dark_knight
-        },
+        let response = axios.get(url, {
+            params: {
+                query: `batman`
+            },
+            headers: {
+                Authorization: `Bearer ${accessToken}`
+            }
+        })
 
-        {
-            name: "Joker",
-            othDet: "2019 | Thriller",
-            rating: "8.3",
-            image: joker
-        },
+        response.then((res) => {
+            setPopularMovies(res.data.results)
+        }).catch((err) => console.log(`Error is ${err}`))
 
-        {
-            name: "Avengers: Endgame",
-            othDet: "2019 | Action",
-            rating: "8.4",
-            image: avengers
-        },
+    }, [])
 
-        {
-            name: "Titanic",
-            othDet: "1997 | Romance",
-            rating: "7.9",
-            image: titanic
-        },
 
-        {
-            name: "Dune: Part Two",
-            othDet: "2024 | Sci-Fi",
-            rating: "8.5",
-            image: dune2
-        },
 
-        {
-            name: "The Shawshank Redemption",
-            othDet: "1994 | Drama",
-            rating: "9.3",
-            image: the_shawshank_redemption
-        },
+    useEffect(() => {
 
-        {
-            name: "Fight Club",
-            othDet: "1999 | Thriller",
-            rating: "8.8",
-            image: fight_club
-        },
+        const accessToken = import.meta.env.VITE_TMDB_READ_ACCESS_TOKEN;
+        const url = "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1";
 
-        {
-            name: "Spider-Man: No Way Home",
-            othDet: "2021 | Action",
-            rating: "8.2",
-            image: spiderman
-        },
+        let response = axios.get(url, {
+            params: {
+                query: `batman`
+            },
+            headers: {
+                Authorization: `Bearer ${accessToken}`
+            }
+        })
 
-        {
-            name: "The Matrix",
-            othDet: "1999 | Sci-Fi",
-            rating: "8.7",
-            image: the_matrix
-        },
+        response.then((res) => {
+            setTopRatedMovies(res.data.results)
+        }).catch((err) => console.log(`Error is ${err}`))
 
-        {
-            name: "Gladiator",
-            othDet: "2000 | Action",
-            rating: "8.5",
-            image: gladiator
-        },
-
-        {
-            name: "Parasite",
-            othDet: "2019 | Thriller",
-            rating: "8.5",
-            image: parasite
-        },
-
-        {
-            name: "Whiplash",
-            othDet: "2014 | Drama",
-            rating: "8.5",
-            image: whiplash
-        },
-
-        {
-            name: "Forrest Gump",
-            othDet: "1994 | Drama",
-            rating: "8.8",
-            image: forest_gump
-        },
-
-        {
-            name: "The Prestige",
-            othDet: "2006 | Mystery",
-            rating: "8.5",
-            image: the_prestige
-        },
-
-        {
-            name: "Shutter Island",
-            othDet: "2010 | Thriller",
-            rating: "8.2",
-            image: shutter_island
-        },
-
-        {
-            name: "The Wolf of Wall Street",
-            othDet: "2013 | Crime",
-            rating: "8.2",
-            image: the_wolf_of_wall_street
-        },
-
-        {
-            name: "Deadpool",
-            othDet: "2016 | Comedy",
-            rating: "8.0",
-            image: deadpool
-        }
-    ];
+    }, [])
 
     return (
         <div>
-            <PopularMovies popularMovies={movieArr} />
-            <TopRatedMovies topRatedMovies = {movieArr}/>
+            <PopularMovies popularMoviess={popularMovies} />
+            <TopRatedMovies topRatedMoviess={topRatedMovies} />
         </div>
     )
 }
