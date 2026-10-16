@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-export default function SearchBox({getInputValue}) {
+export default function SearchBox({setSearhInput}) {
 
     let [input, setInput] = useState("");
 
     let handleInputChange = (event)=>{
-        setInput(event.target.value);
-        getInputValue(event.target.value);   
+        setInput(event.target.value);  
+        setSearhInput(event.target.value)
     }
 
     return (

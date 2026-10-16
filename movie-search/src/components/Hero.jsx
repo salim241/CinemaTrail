@@ -1,10 +1,10 @@
 import Navbar from "./Navbar.jsx"
 import PosterSlider from "./PosterSlider.jsx"
 
-export default function Hero() {
+export default function Hero({setIsSearching, setInputValue}) {
     return (
         <>
-            <Navbar />
+            <Navbar setIsSearching = {setIsSearching} setInputValue = {setInputValue}/>
             <PosterSlider />
         </>
     )

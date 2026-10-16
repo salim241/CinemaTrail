@@ -1,16 +1,19 @@
 import SearchBox from "./SearchBox.jsx";
 import Button from "./Button.jsx";
+import { useState } from "react";
 
-export default function SearchArea() {
+export default function SearchArea({setIsSearching, setInputValue}) {
 
-    function getInputValue(value) {
-        console.log("Input received in parent:", value);
-    }
+    const [searchInput, setSearhInput] = useState("");
+
+    // function getInputValue(value) {
+    //     console.log(`input in parent is ${value}`)
+    // }
 
     return (
         <>
-            <SearchBox getInputValue = {getInputValue}/>
-            <Button />
+            <SearchBox setSearhInput={setSearhInput} />
+            <Button searchInput = {searchInput} setIsSearching = {setIsSearching} setInputValue = {setInputValue}/>
         </>
     )
 }

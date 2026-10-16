@@ -1,7 +1,9 @@
-export default function Button() {
+export default function Button({searchInput, setIsSearching, setInputValue}) {
 
     let buttonHandle = () =>{
-        console.log("Button was clicked");
+        console.log(`value in button is ${searchInput}`);
+        setInputValue(searchInput)
+        setIsSearching(true);
     }
 
     return (

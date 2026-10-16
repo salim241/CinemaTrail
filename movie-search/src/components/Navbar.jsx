@@ -2,7 +2,7 @@ import SearchArea from "./SearchArea.jsx"
 
 import Logo from "../assets/logo.png"
 
-export default function Navbar() {
+export default function Navbar({setIsSearching, setInputValue}) {
     return (
         <div>
             <div className="
@@ -39,7 +39,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="w-3/10 h-7/10 flex justify-around">
-                    <SearchArea />
+                    <SearchArea setIsSearching = {setIsSearching} setInputValue = {setInputValue}/>
                 </div>
 
             </div>

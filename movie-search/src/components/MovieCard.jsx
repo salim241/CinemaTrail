@@ -5,6 +5,8 @@ export default function MovieCard({movies}) {
     return (
         <div className="h-auto mb-20">
 
+            {console.log(movies)}
+
             <div className="h-full flex gap-5 overflow-auto scroll-smooth scrollbar-none">
 
                 {
