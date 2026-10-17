@@ -5,9 +5,9 @@ import MovieSection from "../components/MovieSection";
 export default function Movies() {
     return (
         <>
-          <Hero/>
+            <Hero />
             <MovieSection />
-           <Footer />
+            <Footer />
         </>
     )
 }
