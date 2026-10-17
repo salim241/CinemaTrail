@@ -25,17 +25,17 @@ export default function SearchedMovies({ inputValue }) {
             setSearchResult(res.data.results)
         }).catch((err) => console.log(`Error is ${err}`))
 
-    }, [])
+    }, [inputValue])
 
     return (
         <div className="min-h-screen px-6 py-8">
 
-            {/* Search Results Heading */}
+          
             <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-6">
                 Search Results for <span className="font-bold text-[var(--rating)]"> "{inputValue}"</span>
             </h2>
 
-            {/* Movie Cards Grid */}
+           
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
 
                 {searchResult
@@ -49,7 +49,7 @@ export default function SearchedMovies({ inputValue }) {
                         >
                             <div className="h-full overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--bg-card)] shadow-lg">
 
-                                {/* Movie Poster */}
+                              
                                 <div className="aspect-[2/3] w-full overflow-hidden">
                                     <img
                                         src={
@@ -62,7 +62,7 @@ export default function SearchedMovies({ inputValue }) {
                                     />
                                 </div>
 
-                                {/* Movie Details */}
+                               
                                 <div className="p-3">
 
                                     <h3 className="mb-2 line-clamp-2 font-semibold text-[var(--text-primary)]">
@@ -88,7 +88,7 @@ export default function SearchedMovies({ inputValue }) {
 
             </div>
 
-            {/* Empty Search Results */}
+           
             {searchResult.length === 0 && (
                 <p className="mt-10 text-center text-[var(--text-secondary)]">
                     No movies found. Try searching for another movie.
