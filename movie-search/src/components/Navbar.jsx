@@ -1,6 +1,7 @@
 import SearchArea from "./SearchArea.jsx"
 
 import Logo from "../assets/logo.png"
+import { NavLink } from "react-router-dom"
 
 export default function Navbar({setIsSearching, setInputValue}) {
     return (
@@ -30,11 +31,11 @@ export default function Navbar({setIsSearching, setInputValue}) {
 
                 <div className="w-3/10">
                     <ul className="flex justify-between">
-                        <li className="links-style"><a href="/" className="hover-links">Home</a></li>
-                        <li className="links-style"><a href="/" className="hover-links">Movie</a></li>
-                        <li className="links-style"><a href="/" className="hover-links">TV Shows</a></li>
-                        <li className="links-style"><a href="/" className="hover-links">Popular</a></li>
-                        <li className="links-style"><a href="/" className="hover-links">Top Rated</a></li>
+                        <li className="links-style"><NavLink to="/" end className = {({isActive}) => isActive ? "nav-link nav-link-active" : "hover-links"} >Home</NavLink></li>
+                        <li className="links-style"><NavLink to="/movie" className = {({isActive}) => isActive ? "nav-link nav-link-active" : "hover-links"}>Movie</NavLink></li>
+                        <li className="links-style"><NavLink to="/tvshows" className = {({isActive}) => isActive ? "nav-link nav-link-active" : "hover-links"}>TV Shows</NavLink></li>
+                        <li className="links-style"><NavLink to="/popular" className = {({isActive}) => isActive ? "nav-link nav-link-active" : "hover-links"}>Popular</NavLink></li>
+                        <li className="links-style"><NavLink to="/toprated" className = {({isActive}) => isActive ? "nav-link nav-link-active" : "hover-links"}>Top Rated</NavLink></li>
                     </ul>
                 </div>
 
