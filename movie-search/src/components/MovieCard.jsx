@@ -5,8 +5,6 @@ export default function MovieCard({movies}) {
     return (
         <div className="h-auto mb-20">
 
-            {console.log(movies)}
-
             <div className="h-full flex gap-5 overflow-auto scroll-smooth scrollbar-none">
 
                 {
@@ -18,7 +16,7 @@ export default function MovieCard({movies}) {
                             <div className="h-auto w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-2xl">
 
                                 <div className="h-[60%] rounded-t-lg overflow-hidden">
-                                    <img src={imageBaseUrl+movie.poster_path} alt={movie.title} className="rounded-t-lg object-cover" />
+                                    <img src={imageBaseUrl+movie.poster_path} alt={movie.title} className="rounded-t-lg object-cover transition-transform duration-300 hover:scale-105" />
                                 </div>
 
 
