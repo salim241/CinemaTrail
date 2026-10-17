@@ -1,5 +1,7 @@
 import Logo from "../assets/logo.png"
 
+import {Link} from "react-router-dom"
+
 export default function Footer() {
     return (
         <div className="mt-48">
@@ -33,11 +35,11 @@ export default function Footer() {
                     </div>
 
                     <ul className="text-[var(--text-primary)]">
-                        <li className="footer-links"><a href="/" className="hover-links">Home</a></li>
-                        <li className="footer-links"><a href="/" className="hover-links">Trending</a></li>
-                        <li className="footer-links"><a href="/" className="hover-links">Popular Movies</a></li>
-                        <li className="footer-links"><a href="/" className="hover-links">Top Rated</a></li>
-                        <li className="footer-links"><a href="/" className="hover-links">Upcoming Movies</a></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">Home</Link></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">Trending</Link></li>
+                        <li className="footer-links"><Link to="/popular" className="hover-links">Popular Movies</Link></li>
+                        <li className="footer-links"><Link to="/toprated" className="hover-links">Top Rated</Link></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">Upcoming Movies</Link></li>
                     </ul>
 
 
@@ -54,11 +56,11 @@ export default function Footer() {
                     </div>
 
                     <ul className="text-[var(--text-primary)]">
-                        <li className="footer-links"><a href="/" className="hover-links">Action</a></li>
-                        <li className="footer-links"><a href="/" className="hover-links">Drama</a></li>
-                        <li className="footer-links"><a href="/" className="hover-links">Comedy</a></li>
-                        <li className="footer-links"><a href="/" className="hover-links">Thriller</a></li>
-                        <li className="footer-links"><a href="/" className="hover-links">Sci-Fi</a></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">Action</Link></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">Drama</Link></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">Comedy</Link></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">Thriller</Link></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">Sci-Fi</Link></li>
                     </ul>
 
                 </div>
@@ -73,10 +75,10 @@ export default function Footer() {
                     </div>
 
                     <ul className="text-[var(--text-primary)]">
-                        <li className="footer-links"><a href="/" className="hover-links">About us</a></li>
-                        <li className="footer-links"><a href="/" className="hover-links">Contact</a></li>
-                        <li className="footer-links"><a href="/" className="hover-links">Privacy Policy</a></li>
-                        <li className="footer-links"><a href="/" className="hover-links">Terms</a></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">About us</Link></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">Contact</Link></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">Privacy Policy</Link></li>
+                        <li className="footer-links"><Link to="/" className="hover-links">Terms</Link></li>
                     </ul>
 
                 </div>
