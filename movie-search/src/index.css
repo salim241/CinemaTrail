@@ -28,6 +28,14 @@ body{
     @apply text-[var(--text-primary)];
 }
 
+.nav-link {
+    @apply relative py-2 text-sm transition-colors duration-300 text-[var(--text-secondary)] hover:text-[var(--text-primary)];
+  }
+
+.nav-link-active {
+    @apply text-[var(--text-primary)] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[var(--rating)];
+  }
+
 .footer-links{
   @apply text-[var(--text-primary)] mb-1;
 }
