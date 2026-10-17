@@ -4,10 +4,12 @@ import MovieSection from "../components/MovieSection";
 
 export default function Movies() {
     return (
-        <>
+        <div>
             <Hero />
-            <MovieSection />
+            <div className="py-8">
+                <MovieSection />
+            </div>
             <Footer />
-        </>
+        </div>
     )
 }
