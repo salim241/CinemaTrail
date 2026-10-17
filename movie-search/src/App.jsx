@@ -1,24 +1,48 @@
-import Hero from "./components/Hero.jsx"
-import Footer from "./components/Footer.jsx"
-import MovieSection from "./components/MovieSection.jsx"
-import SearchedMovies from "./components/SearchedMovies.jsx"
-import PosterSlider from "./components/PosterSlider.jsx"
 import { useState } from "react"
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+
+
+import Home from "./pages/Home.jsx"
+import Movies from "./pages/Movies.jsx"
+import Popular from "./pages/Popular.jsx"
+import TopRated from "./pages/TopRated.jsx"
+import TvShow from "./pages/TvShow.jsx"
+
 
 function App() {
 
-  const [isSearching, setIsSearching] = useState(false);
-  const [inputValue, setInputValue] = useState("");
+  // const [isSearching, setIsSearching] = useState(false);
+  // const [inputValue, setInputValue] = useState("");
+
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/movie",
+        element: <Movies />
+      },
+      {
+        path: "/popular",
+        element: <Popular />
+      },
+      {
+        path: "/toprated",
+        element: <TopRated />
+      },
+      {
+        path: "/tvshows",
+        element: <TvShow />
+      }
+    ]
+  )
 
   return (
     <div>
-      <Hero setIsSearching={setIsSearching} setInputValue={setInputValue} />
-
-      { isSearching ? "" : <PosterSlider />}
-
-      {isSearching ? <SearchedMovies inputValue={inputValue} /> : <MovieSection />}
-
-      <Footer />
+      <RouterProvider  router= {router}/>
     </div>
   )
 }
