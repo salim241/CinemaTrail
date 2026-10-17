@@ -37,7 +37,7 @@ export default function TopRated() {
             <Hero />
 
 
-            <div className="min-h-screen px-6 py-8">
+            <div className="min-h-screen px-14 py-8">
 
 
                 <h2 className="font-semibold text-2xl mb-3 text-[var(--text-primary)]">Top Rated Movies</h2>
