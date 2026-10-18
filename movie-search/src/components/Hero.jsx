@@ -1,10 +1,10 @@
 import Navbar from "./Navbar.jsx"
 
 
-export default function Hero({setIsSearching, setInputValue}) {
+export default function Hero() {
     return (
         <>
-            <Navbar setIsSearching = {setIsSearching} setInputValue = {setInputValue}/>
+            <Navbar />
         </>
     )
 }
