@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 
@@ -8,12 +6,10 @@ import Movies from "./pages/Movies.jsx"
 import Popular from "./pages/Popular.jsx"
 import TopRated from "./pages/TopRated.jsx"
 import TvShow from "./pages/TvShow.jsx"
+import SearchPage from "./pages/SearchPage.jsx"
 
 
 function App() {
-
-  // const [isSearching, setIsSearching] = useState(false);
-  // const [inputValue, setInputValue] = useState("");
 
   const router = createBrowserRouter(
     [
@@ -36,6 +32,10 @@ function App() {
       {
         path: "/tvshows",
         element: <TvShow />
+      },
+      {
+        path: "/searchpage",
+        element: <SearchPage />
       }
     ]
   )
