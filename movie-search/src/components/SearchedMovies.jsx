@@ -28,7 +28,7 @@ export default function SearchedMovies({ inputValue }) {
     }, [inputValue])
 
     return (
-        <div className="min-h-screen px-6 py-8">
+        <div className="min-h-screen px-14 py-8">
 
           
             <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-6">
