@@ -3,7 +3,7 @@ import SearchArea from "./SearchArea.jsx"
 import Logo from "../assets/logo.png"
 import { NavLink } from "react-router-dom"
 
-export default function Navbar({setIsSearching, setInputValue}) {
+export default function Navbar() {
     return (
         <div>
             <div className="
@@ -40,7 +40,7 @@ export default function Navbar({setIsSearching, setInputValue}) {
                 </div>
 
                 <div className="w-3/10 h-7/10 flex justify-around">
-                    <SearchArea setIsSearching = {setIsSearching} setInputValue = {setInputValue}/>
+                    <SearchArea />
                 </div>
 
             </div>
