@@ -1,8 +1,19 @@
-export default function Button({searchInput, setIsSearching, setInputValue}) {
+import { useNavigate } from "react-router-dom"
 
-    let buttonHandle = () =>{
-        setInputValue(searchInput)
-        setIsSearching(true);
+export default function Button({ searchInput }) {
+
+    const navigate = useNavigate();
+
+    let buttonHandle = () => {
+        const query = searchInput.trim();
+
+        if (!query) return;
+
+        navigate("/searchpage", {
+            state: {
+                searchQuery: query
+            }
+        });
     }
 
     return (
