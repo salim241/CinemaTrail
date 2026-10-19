@@ -7,6 +7,7 @@ import Popular from "./pages/Popular.jsx"
 import TopRated from "./pages/TopRated.jsx"
 import TvShow from "./pages/TvShow.jsx"
 import SearchPage from "./pages/SearchPage.jsx"
+import MovieDetailsPage from "./pages/MovieDetailsPage.jsx"
 
 
 function App() {
@@ -36,6 +37,10 @@ function App() {
       {
         path: "/searchpage",
         element: <SearchPage />
+      },
+      {
+        path: "/movies/:id",
+        element: <MovieDetailsPage />
       }
     ]
   )
