@@ -1,8 +1,8 @@
-# 🎬 CinemaTrial
+# 🎬 CinemaTrail
 
 ### Discover movies. Explore stories. Find your next watch.
 
-CinemaTrial is a movie discovery web application built with React that allows users to explore movies, search for titles, discover popular and top-rated films, and view detailed information about individual movies.
+CinemaTrail is a movie discovery web application built with React that allows users to explore movies, search for titles, discover popular and top-rated films, and view detailed information about individual movies.
 
 The application uses the TMDB API to fetch movie and TV show data and presents it through a clean, interactive interface.
 
@@ -33,7 +33,7 @@ The application uses the TMDB API to fetch movie and TV show data and presents i
 ## 📸 Screenshots
 
 ### Homepage
-![CinemaTrial Homepage](./Screenshots/Homepage.png)
+![CinemaTrail Homepage](./Screenshots/Homepage.png)
 
 ### Movie Details
 ![Movie Details Page](./Screenshots/MovieDetailPage.png)
@@ -43,7 +43,7 @@ The application uses the TMDB API to fetch movie and TV show data and presents i
 
 ## 🚀 Getting Started
 
-Follow these steps to run CinemaTrial locally.
+Follow these steps to run CinemaTrail locally.
 
 ### Prerequisites
 
@@ -60,7 +60,7 @@ git clone https://github.com/salim241/CinemaTrail.git
 ### 2. Navigate to the Project Directory
 
 ```bash
-cd CinemaTrial
+cd CinemaTrail
 ```
 
 ### 3. Install Dependencies
@@ -95,12 +95,12 @@ Ensure your `.gitignore` includes:
 npm run dev
 ```
 
-Vite will display a local development URL in your terminal. Open that URL in your browser to use CinemaTrial.
+Vite will display a local development URL in your terminal. Open that URL in your browser to use CinemaTrail.
 
 ## 📂 Project Structure
 
 ```text
-CinemaTrial/
+CinemaTrail/
 ├── public/
 ├── src/
 │   ├── assets/
@@ -142,7 +142,7 @@ CinemaTrial/
 
 ## 🌐 API Integration
 
-CinemaTrial uses the **TMDB API** to retrieve movie and TV show information.
+CinemaTrail uses the **TMDB API** to retrieve movie and TV show information.
 
 The application makes HTTP requests to fetch data such as movie titles, posters, ratings, release dates, movie details, and cast information.
 
@@ -154,7 +154,7 @@ This product uses the TMDB API but is not endorsed or certified by TMDB.
 
 ## 📚 Key Learnings
 
-Building CinemaTrial provided hands-on practice with:
+Building CinemaTrail provided hands-on practice with:
 
 - Creating reusable React components.
 - Passing data between components using props.
