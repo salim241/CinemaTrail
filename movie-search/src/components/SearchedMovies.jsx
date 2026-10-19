@@ -31,7 +31,7 @@ export default function SearchedMovies({ inputValue }) {
     }, [inputValue])
 
     return (
-        <div className="min-h-screen px-14 py-8" onClick={() => navigate('/moviedetailspage')}>
+        <div className="min-h-screen px-14 py-8">
 
           
             <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-6">
@@ -49,6 +49,7 @@ export default function SearchedMovies({ inputValue }) {
 
                             key={movie.id}
                             className="min-w-0 cursor-pointer"
+                            onClick={() => navigate(`/movies/${movie.id}`)}
                         >
                             <div className="h-full overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--bg-card)] shadow-lg">
 

@@ -249,7 +249,7 @@ export default function MovieDetails({ movie, credits }) {
                                             src={`${imageBaseUrl}w185${actor.profile_path}`}
                                             alt={actor.name}
                                             loading="lazy"
-                                            className="h-48 w-full object-cover object-top"
+                                            className="h-48 w-full object-contain object-top"
                                         />
                                     ) : (
                                         <div className="flex h-48 items-center justify-center bg-gray-800 text-sm text-gray-400">
