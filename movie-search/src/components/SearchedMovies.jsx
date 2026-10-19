@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react"
 
 import axios from "axios"
+import { useNavigate } from "react-router-dom";
 
 export default function SearchedMovies({ inputValue }) {
 
     const [searchResult, setSearchResult] = useState([])
     const imageBaseUrl = "https://image.tmdb.org/t/p/w500";
+
+    const navigate = useNavigate()
 
     useEffect(() => {
 
@@ -28,7 +31,7 @@ export default function SearchedMovies({ inputValue }) {
     }, [inputValue])
 
     return (
-        <div className="min-h-screen px-14 py-8">
+        <div className="min-h-screen px-14 py-8" onClick={() => navigate('/moviedetailspage')}>
 
           
             <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-6">

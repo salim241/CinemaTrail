@@ -4,12 +4,15 @@ import axios from "axios"
 
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
+import { useNavigate } from "react-router-dom";
 
 export default function TopRated() {
 
     const imageBaseUrl = "https://image.tmdb.org/t/p/w500";
 
     let [topRatedMovies, setTopRatedMovies] = useState([])
+
+    const navigate = useNavigate()
 
     useEffect(() => {
 
@@ -37,7 +40,7 @@ export default function TopRated() {
             <Hero />
 
 
-            <div className="min-h-screen px-14 py-8">
+            <div className="min-h-screen px-14 py-8" onClick={() => navigate('/moviedetailspage')}>
 
 
                 <h2 className="font-semibold text-2xl mb-3 text-[var(--text-primary)]">Top Rated Movies</h2>

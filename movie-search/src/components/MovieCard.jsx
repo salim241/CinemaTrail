@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 export default function MovieCard({movies}) {
 
     const imageBaseUrl = "https://image.tmdb.org/t/p/w500";
+
+    const navigate = useNavigate()
 
     return (
         <div className="h-auto mb-20">
@@ -12,7 +16,7 @@ export default function MovieCard({movies}) {
 
 
 
-                        <div key={movie.title} className="h-full cursor-pointer">
+                        <div key={movie.title} className="h-full cursor-pointer" onClick={() => navigate(`/movies/${movie.id}`)}>
                             <div className="h-auto w-48 bg-[var(--bg-card)] border border-[var(--border)] rounded-lg shadow-2xl">
 
                                 <div className="h-[60%] rounded-t-lg overflow-hidden">
