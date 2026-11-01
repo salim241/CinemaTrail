@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom"
 
 export default function Navbar() {
     return (
-        <div>
+        <div className="bg-[var(--bg-primary)] sticky top-0 z-50 w-full">
             <div className="
             h-16 w-full 
             max-md:w-full 
