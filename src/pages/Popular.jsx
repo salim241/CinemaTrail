@@ -5,6 +5,7 @@ import axios from "axios"
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import { useNavigate } from "react-router-dom";
+import Loader from "../components/Loader";
 
 export default function Popular() {
 
@@ -47,11 +48,7 @@ export default function Popular() {
                 <h2 className="font-semibold text-2xl mb-3 text-[var(--text-primary)]">Popular Movies</h2>
 
                 {popularLoading ? (
-                    <div className="flex justify-center items-center min-h-[50vh]">
-                        <p className="text-xl font-semibold text-[var(--text-primary)]">
-                            Loading Popular Movies...
-                        </p>
-                    </div>
+                    <Loader />
                 ) :
 
                     (

@@ -4,6 +4,7 @@ import axios from "axios"
 
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
+import Loader from "../components/Loader"
 import { useNavigate } from "react-router-dom";
 
 export default function TopRated() {
@@ -48,11 +49,7 @@ export default function TopRated() {
                 <h2 className="font-semibold text-2xl mb-3 text-[var(--text-primary)]">Trending TV Shows</h2>
 
                 {tvShowsLoading ? (
-                    <div className="flex justify-center items-center min-h-[50vh]">
-                        <p className="text-xl font-semibold text-[var(--text-primary)]">
-                            Loading TV Shows...
-                        </p>
-                    </div>
+                    <Loader />
                 ) :
 
                     (
